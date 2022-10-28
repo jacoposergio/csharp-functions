@@ -53,14 +53,28 @@ int[] ElevaArrayAlQuadrato(int[] array)
     return arraySquared;
 }
 
-int[] arrayTest = { 1, 2, 3, 4, 5 };
-int[] arrayTestSquared = ElevaArrayAlQuadrato(arrayTest);
+//int[] arrayTest = { 1, 2, 3, 4, 5 };
+//int[] arrayTestSquared = ElevaArrayAlQuadrato(arrayTest);
+
+//StampaArray(arrayTestSquared);
 
 
-StampaArray(arrayTestSquared);
+//int SommaElementiArray(int[] array): che preso un array di numeri interi, restituisca la somma 
+//    totale di tutti gli elementi dell’array.
 
 
+//int SommaElementiArray(int[] array)
+//{
+//    int sommaTotaleElementi = 0;
+//    for (int i = 0; i < array.Length; i++)
+//    {
+//        sommaTotaleElementi += array[i];
+//    }
+//    return sommaTotaleElementi;
+//}
 
+//int[] arrayTest = { 1, 2, 3, 4, 5, 6 };
+//int SommaArrayTest = SommaElementiArray(arrayTest);
 
-
+//Console.WriteLine("la somma totale degli elementi è: " + SommaArrayTest);
 
