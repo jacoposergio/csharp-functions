@@ -10,7 +10,7 @@ void StampaArray(int[] array)
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write("elemento" + array[i] + ", ");
+        Console.Write("elemento " + array[i] + ", ");
     }
     Console.Write("]");
 }
@@ -55,6 +55,9 @@ int[] ElevaArrayAlQuadrato(int[] array)
 
 int[] arrayTest = { 1, 2, 3, 4, 5 };
 int[] arrayTestSquared = ElevaArrayAlQuadrato(arrayTest);
+
+
+StampaArray(arrayTestSquared);
 
 
 
