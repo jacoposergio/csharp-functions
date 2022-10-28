@@ -5,15 +5,15 @@
 //int[] arrayTest = { 1, 2, 3, 4, 5 };
 //StampaArray(arrayTest);
 
-//void StampaArray(int[] array)
-//{
-//    Console.Write("[");
-//    for (int i = 0; i < array.Length; i++)
-//    {
-//        Console.Write("elemento" + array[i] + ", " );
-//    }
-//    Console.Write("]");
-//}
+void StampaArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write("elemento" + array[i] + ", ");
+    }
+    Console.Write("]");
+}
 
 // *****fare l'ultimo elemento dell'array con l'if ******
 
@@ -23,10 +23,10 @@
 //int Quadrato(int numero): che vi restituisca il quadrato del numero passato come parametro. 
 
 
-//int Quadrato(int likeToSquare)
-//{
-//   return likeToSquare * likeToSquare;
-//}
+int Quadrato(int likeToSquare)
+{
+    return likeToSquare * likeToSquare;
+}
 
 //Console.WriteLine("Inserisci un numero");
 //int userNumber = Convert.ToInt32(Console.ReadLine());
@@ -42,18 +42,21 @@
 //    parametro della funzione! Vi ricordate perchè? Pensateci (vedi slide)
 
 
-int ElevaArrayAlQuadrato(int[] array)
+int[] ElevaArrayAlQuadrato(int[] array)
 {
     int[] arraySquared = new int[array.Length];
+
     for (int i = 0; i < array.Length; i++)
     {
-        arraySquared[i] = array[i] * array[i];
+        arraySquared[i] = Quadrato(array[i]);
     }
     return arraySquared;
 }
 
 int[] arrayTest = { 1, 2, 3, 4, 5 };
 int[] arrayTestSquared = ElevaArrayAlQuadrato(arrayTest);
+
+
 
 
 
